@@ -56,11 +56,16 @@ return {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
+        defaults = {
+          prompt_prefix = '   ',
+          layout_strategy = 'horizontal',
+          layout_config = { prompt_position = 'top', width = 0.70 },
+          sorting_strategy = 'ascending',
+          winblend = 0,
+          --   mappings = {
+          --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
+          --   },
+        },
         -- pickers = {}
         extensions = {
           ['ui-select'] = {

@@ -17,6 +17,14 @@ return {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
+      -- {
+      --   'SmiteshP/nvim-navbuddy',
+      --   dependencies = {
+      --     'SmiteshP/nvim-navic',
+      --     'MunifTanjim/nui.nvim',
+      --   },
+      --   opts = { lsp = { auto_attach = true } },
+      -- },
       -- Automatically install LSPs and related tools to stdpath for Neovim
       { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
